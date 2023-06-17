@@ -1,34 +1,33 @@
-import React from 'react';
-import './NavBar.css'; // Importa el archivo CSS
-import CartWidget from '../CartWidget/CartWidget';
-import EmailIcon from '@mui/icons-material/Email';
+import "./NavBar.css";
 
-
+import { Link } from "react-router-dom";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const NavBar = () => {
   return (
-    <div >
-      <div className="container"></div>
-      <nav className="navbar ul"> {/* Utiliza la clase "navbar" del archivo CSS */}
-        <ul>
-        
-        <li>
-          <a href="https://www.google.com.ar/">PRODUCTOS</a>
-        </li>
-        <li>
-          <a href="https://www.google.com.ar/">SALE</a>
-        </li>
-        <li>
-           <a href="https://www.google.com/intl/es-419/gmail/about/" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}> 
-              <EmailIcon/>
-           </a>
-        </li>
-        <li>
-          < CartWidget/>
-        </li>
-      
-        </ul>
-      </nav>
-    </div>
+    <nav className="nav-container">
+      <ul className="nav-ul">
+        <Link className="li" to="/">
+          Home
+        </Link>
+        <Link className="li" to="/QuienesSomos">
+          Quienes Somos
+        </Link>
+        <Link className="li" to="/contacto">
+          Contacto
+        </Link>
+        <Link className="li" to="/categoria/User">
+        User
+        </Link>
+        <Link className="li" to="/categoria/Organization">
+        Organization
+        </Link>
+
+        <Link className="li" to="/carrito">
+        <ShoppingCartIcon />
+        </Link>
+      </ul>
+    </nav>
   );
-}
+};
+
 export default NavBar;

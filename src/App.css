@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .App-logo {
@@ -35,4 +38,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Cards-Container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,96,1) 35%, rgba(1,57,69,1) 100%); 
 }
