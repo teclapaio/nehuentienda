@@ -33,9 +33,15 @@ class App extends Component {
           <Route path="/categoria/:categoriaId" element={<CategoriaPage />} />
           <Route path="/carrito" element={<CarritoPage />} />
           </Routes>
+<<<<<<< HEAD
         { <div className="Cards-Container">
         <CardList />
       </div> }
+=======
+        {/* <div className="Cards-Container">
+        <CardList />
+      </div> */}
+>>>>>>> 568bbe647ec2ea9a82f722b802fa390072c8897f
       
         <ItemListContainer greeting="Gracias por visitar nuestra página"/> 
       </div>
